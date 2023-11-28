@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Barbería</title>
+    <link rel="stylesheet" type="text/css" href="ber.css">
+</head>
+<body>
+    <header>
+         <nav class="navbar">
+  <div class="logo">
+    <img src="imgenes/logo%20en%20blanco.png" alt="Logo de la empresa">
+  </div>
+  <ul class="menu">
+    <li>
+      <a href="#">Inicio</a>
+      <ul class="submenu">
+        <li><a href="#quienes">Quienes somos?</a></li>
+        
+      </ul>
+    </li>
+    <li>
+      <a href="#">Servicios</a>
+      <ul class="submenu">
+        <li><a href="#seta">Cabello</a></li>
+        <li><a href="#barba">Barba</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#">Cortes</a>
+      <ul class="submenu">
+        <li><a href="cor.html">Corto</a></li>
+        <li><a href="cor%20-%20copia.html">Medio y largo</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#foo">Contacto</a>
+    
+    </li>
+  </ul>
+</nav>
+
+    </header>
+      <section class="slider">
+        <div class="slider-content">
+            <h2>Agenda tu cita</h2>
+            <p>¡Reserva ahora para obtener el mejor corte de cabello!</p>
+            <a href="#agenda" class="btn-agendar">Agendar</a>
+        </div>
+    </section>
+    <h2 id="quienes"> quienes</h2>
+     <section class="empresa">
+    <div class="container">
+      <img src="imgenes/Barber%20Rivas.png" alt="Imagen de la empresa">
+      <h2>Barber Shop Rivas</h2>
+      <p  id="seta">Somos una empresa dedicada al corte de cabello en hombres, contamos con experiencia y talento. Surgimos a partir de la pandemia como parte de una necesidad visita en esta área durante ese tiempo, y nuestro compromiso crece al igual que nuestros clientes. Ven y déjanos transformar tu imagen.</p>
+    </div>
+  </section>
+    
+     <section class="informacion">
+        <div class="fila">
+            <div class="caja">
+                <img src="imgenes/clasico.jpg" alt="Corte 1">
+                <h3>Clasico</h3>
+               
+                <p>Precio: $100</p>
+            </div>
+            <div class="caja">
+                <img src="imgenes/Seta.png" alt="Corte 2">
+                <h3 >Seta</h3>
+                
+                <p>Precio: $120</p>
+            </div>
+            <div class="caja">
+                <img src="imgenes/mullet.png" alt="Corte 3">
+                <h3>Mullet</h3>
+                
+                <p>Precio: $180</p>
+            </div>
+        </div>
+        <!-- Repetir la estructura de la fila para las siguientes filas -->
+    </section>
+        <button class="ver-mas">  <a href="cor.html" > Ver más</a></button>
+<section class="cortes">
+  <div class="corte">
+    <h2>Corte César</h2>
+      <img src="imgenes/cesar.jpg" alt="Corte 3">
+    <p>Precio: $120</p>
+  </div>
+  <div class="corte">
+    <h2>Corte texturizado</h2>
+       <img src="imgenes/texturizado.jpg" alt="Corte 3">
+    <p>Precio: $120</p>
+  </div>
+  <div class="corte">
+    <h2>Corte Con flequillo abierto</h2>
+      <img src="imgenes/Con%20flequillo%20abierto.jpg" alt="Corte 3">
+    <p id="barba">Precio: $120</p>
+  </div>
+</section>
+    <section class="cortes">
+  <div class="corte">
+    <h2 >Barba delineada</h2>
+      <img src="imgenes/delineada.jpg" alt="Corte 3">
+    <p>Precio: $120</p>
+  </div>
+  <div class="corte">
+    <h2>Barba estilo Verdi</h2>
+       <img src="imgenes/verdi.jpg" alt="Corte 3">
+    <p>Precio: $120</p>
+  </div>
+  <div class="corte">
+    <h2>Barba vikinga</h2>
+      <img src="imgenes/vikinga.jpg" alt="Corte 3">
+    <p>Precio: $120</p>
+  </div>
+</section>
+<div id="para"> 
+    <h2 id="agenda"> Agenda tu cita</h2>
+    <form action="agenda.php" method="post">
+  <label>Nombre:</label>
+  <input type="text" name="nombre">
+      <label>Tipo de corte</label>
+  <input type="text" name="corte">
+
+  <label>Fecha:</label>
+  <input type="date" name="fecha">
+
+  <label>Hora:</label>
+  <select name="hora">
+    <option value="10:00">10:00</option>
+    <option value="11:00">11:00</option>
+    <option value="10:00">12:00</option>
+    <option value="11:00">1:00</option>
+    <option value="10:00">2:00</option>
+    <option value="11:00">3:00</option>
+    <option value="10:00">4:00</option>
+    <option value="11:00">5:00</option>
+    <option value="10:00">6:00</option>
+    <option value="11:00">7:00</option>
+    <option value="10:00">8:00</option>
+   
+  </select>
+
+  <input type="submit" value="Enviar">
+</form>
+    </div>
+ 
+    <footer>
+        <footer>
+  <div class="redes-sociales">
+    <a href="https://www.facebook.com/joseylupe777"><img src="imgenes/facebook_icon-icons.com_66092.png" alt="Facebook"></a>
+    <a href="#"><img src="imgenes/insta.png" alt="Instagram"></a>
+    <a href="#"><img src="imgenes/twitter.png" alt="Twitter"></a>
+  </div>
+  <div class="agendar-cita">
+    <a href="#para">Agendar Cita</a>
+  </div>
+  <div class="derechos">
+    <p id="foo">© 2023 Barber Shop Rivas. Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+    </footer>
+</body>
+</html>

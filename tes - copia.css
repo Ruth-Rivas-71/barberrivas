@@ -1,0 +1,297 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  padding: 10px;
+  z-index: 999;
+}
+
+/* Estilos de la barra de navegación */
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #333;
+}
+
+.logo {
+  margin-right: 470px;
+    float: left;
+  
+   
+}
+.logo img {
+    width: 140px;
+    height: 100px; 
+    
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+}
+
+.menu li {
+  position: relative;
+    margin-left: 100px;
+}
+
+.menu li a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #f2f2f2;
+}
+
+.menu li:hover .submenu {
+  display: block;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #333;
+  padding: 10px;
+}
+
+.submenu li {
+  margin-bottom: 10px;
+}
+
+.submenu li a {
+  color: #f2f2f2;
+}
+
+.menu li a:hover {
+  border-bottom: 2px solid #f2f2f2;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .logo {
+    margin-bottom: 10px;
+  }
+
+  .menu {
+    flex-direction: column;
+  }
+
+  .menu li {
+    position: static;
+  }
+
+  .submenu {
+    position: static;
+    display: block;
+    margin-left: 20px;
+  }
+}
+
+/* Estilos para el slider */
+.slider {
+    position: relative;
+    height: 100vh;
+    background-image: url(imgenes/slider%20tercera.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider-content {
+    text-align: center;
+    color: #333;
+    background-color: rgba(240, 248, 255, 0.41);
+    width: 450px;
+    height: 250px;
+}
+
+.slider-content h2 {
+    font-size: 36px;
+    color: black;
+}
+
+p {
+    font-size: 18px;
+}
+
+.btn-agendar {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+/* Apartado de cortes */
+
+
+
+/* 2da de cortes*/
+.cortes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.corte {
+  width: 300px;
+  margin: 20px;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  text-align: center;
+}
+.corte img{
+    width: 250px;
+    height: 300px;
+     border-radius: 20%;
+}
+.corte h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+    color: #434155;
+}
+
+.corte p {
+  font-size: 16px;
+  color: #666;
+}
+.pol h1 {
+    font-size: 50px;
+    margin-left: 500px;
+}
+
+
+
+  /* Estilos CSS para la agenda de citas */
+
+
+    .cita {
+      margin-bottom: 20px;
+      padding: 10px;
+      background-color: #f2f2f2;
+      border: 1px solid #ccc;
+       
+    }
+    
+    .fecha {
+      font-weight: bold;
+    }
+    
+    .hora {
+      color: #666;
+    }
+    
+    .cliente {
+      margin-top: 5px;
+    }
+    
+    .formulario {
+      margin-top: 20px;
+    }
+    
+    .formulario label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    
+    .formulario input[type="text"],
+    .formulario select {
+      width: 100%;
+      padding: 5px;
+      margin-bottom: 10px;
+    }
+    
+    .formulario button {
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+    
+    .horario-no-disponible {
+      color: red;
+    }
+form {
+  width: 400px;
+  padding: 30px;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 10px; 
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  background-color: #3498db;
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #2980b9;
+}
+
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #333;
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+}
+footer {
+  background-color: #333;
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+}
+footer img{
+    width: 75px;
+    height: 75px;
+}
+
+.redes-sociales {
+  margin-bottom: 20px;
+}
+
+.redes-sociales a {
+  margin: 0 10px;
+}
+
+.agendar-cita a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color: #333;
+  border-radius: 5px;
+}
+
+.derechos {
+  margin-top: 20px;
+}
